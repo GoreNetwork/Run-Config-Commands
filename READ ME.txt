@@ -1,0 +1,3 @@
+Program pulls the config lines from config.txt and the IP address you want the config commands run on from IPs.txt.  It then applies those commands to the devices.
+
+It then SSH/Telnets to the IP goes into config mode, and runs the commands, saves the config, then looks at the startup config and checks to see if those commands are there.  It doesn't do much logic, it just checks each config line and sees if that line is anywhere in the start config (so be careful of abbreviations like int fa0/1 as that will show up as failed)

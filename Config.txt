@@ -1,0 +1,2 @@
+ip access-list extended test_conf_tool
+permit ip any any
